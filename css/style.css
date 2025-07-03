@@ -304,6 +304,7 @@ h1 {
 }
 
 .locUpdate input {
+  width: 158px;
   border: none;
 }
 
