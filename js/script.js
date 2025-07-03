@@ -5,9 +5,10 @@ $('.popularSlider').slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  prevArrow: '<i class="fa-regular both nr fa-circle-right"></i>',
-  nextArrow: '<i class="fa-regular both pr fa-circle-left"></i>',
   autoplaySpeed: 2000,
+  prevArrow: '<i class="fa-solid both prr fa-arrow-left"></i>',
+  nextArrow: '<i class="fa-solid both nrr fa-arrow-right"></i>',
+  dots: true,
 });
 
 
@@ -22,3 +23,4 @@ $('.counter').counterUp({
 // ------------aos animations 
 
  AOS.init();
+

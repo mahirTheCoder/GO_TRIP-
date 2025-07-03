@@ -80,7 +80,7 @@ p {
 .main_menu ul li a {
   font-size: 15px;
   font-weight: 500;
-  color: var(--primerycolor);
+  color: var(--primerycolor) !important;
   font-family: var(--jost);
 }
 
@@ -95,7 +95,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+ transition: all linear 0.4s;
+}
 
+.boxCustomised:hover {
+  background: #00000063;
 }
 
 .boxCustomised a {
@@ -222,11 +226,12 @@ h1 {
 
 .Checkin {
   width: 198px;
-  height: 49px;
+  height: 40px;
   border-left: 2px solid #697488;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10px;
 
 }
 
@@ -248,7 +253,7 @@ h1 {
 
 .Guest {
   width: 229px;
-  height: 49px;
+  height: 40px;
   border-left: 2px solid #697488;
   display: flex;
   flex-direction: column;
@@ -276,7 +281,7 @@ h1 {
   align-items: center;
   padding-top: 11px;
   margin-right: 10px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .circle {
@@ -298,8 +303,9 @@ h1 {
   font-family: var(--jost);
 }
 
-
-
+.locUpdate input {
+  border: none;
+}
 
 /* -------------navbnar css part end --------------------- */
 
@@ -356,22 +362,57 @@ h1 {
 }
 
 .sliderImg {
-  padding: 10px;
+  margin-right: 26px;
 }
 
 .both {
-  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #697488;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   position: absolute;
-  bottom: -80px;
+  bottom: -95px;
   left: 50%;
+  transition: all linear 0.4s;
 }
 
-.pr {
-  left: 45%;
+.both:hover {
+background: #000;
+color: #FFF;
 }
 
-.nr {
-  left: 50%;
+.prr {
+  left: 42%;
+}
+
+.nrr {
+  left: 52%;
+}
+
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  position: absolute;
+  bottom: -100px;
+  left: 44%;
+  gap: 3px;
+}
+
+.slick-active button {
+  background: #000;
+}
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  /* background: #000; */
 }
 
 .popularSlider {
@@ -539,7 +580,7 @@ h1 {
 
 /* -------------CustomerCare css part start ------------------- */
 #CustomerCare {
-  margin-top: 184px;
+  margin-top: 150px;
 }
 
 .customerCareText {
